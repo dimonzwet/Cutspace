@@ -962,6 +962,7 @@ textarea.input {
   visibility: hidden;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  pointer-events: none;
 }
 
 .item-reviews__image-ibg {
@@ -994,11 +995,9 @@ textarea.input {
   transition: color 0.3s ease 0s;
 }
 
-.no-webp .experience{
-  background: url("../img/experience/bg.png") bottom/cover no-repeat; }
-
 .experience {
   position: relative;
+  background-color: #58bebf;
 }
 
 .experience__container {
@@ -1029,6 +1028,9 @@ textarea.input {
 }
 
 @media (min-width: 42.49875em) {
+  .no-webp .experience{
+    background: url("../img/experience/bg.png") bottom/cover no-repeat; }
+
   .experience__body {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1860,10 +1862,6 @@ textarea.input {
 }
 
 @media (max-width: 42.49875em) {
-  .experience {
-    background-color: #58bebf;
-  }
-
   .experience__content {
     padding-top: 0.9375rem;
     padding-right: 0;
@@ -3241,4 +3239,7 @@ textarea.input {
   }
 }
 
-.webp .experience{ background: url(../img/experience/bg.webp) bottom/cover no-repeat; }
+@media (min-width: 42.49875em){
+
+  .webp .experience{ background: url(../img/experience/bg.webp) bottom/cover no-repeat; }
+}
